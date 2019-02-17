@@ -1,5 +1,7 @@
 package com.ps.designpatterns.main;
 
+import java.beans.Statement;
+
 import com.ps.designpatterns.domain.SingletonEntity;
 import com.ps.designpatterns.domain.SingletonLazyEntity;
 
@@ -24,6 +26,8 @@ public class SingletonLazyMain
         if(instance == instance2) {
         	System.out.println("Same objects!");
         }
+        
+       
         
     }
 }

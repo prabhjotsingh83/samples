@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Feb 17 17:14:23 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0168-fd86-4c25-00000eb42248 
+on database directory C:\Users\prabh_t\git\samples\samples.java8\DesignPatterns\psDB with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/prabh_t/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_192-b12
+user.dir=C:\Users\prabh_t\git\samples\samples.java8\DesignPatterns
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
