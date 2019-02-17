@@ -12,14 +12,7 @@ public class SingletonLazyDBEntity {
 	static {
 		try {
 			Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		System.out.println("Registered driver");
