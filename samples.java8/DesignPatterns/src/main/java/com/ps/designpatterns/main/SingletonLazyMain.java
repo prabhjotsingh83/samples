@@ -1,4 +1,4 @@
-package com.ps.designpatterns;
+package com.ps.designpatterns.main;
 
 import com.ps.designpatterns.domain.SingletonEntity;
 import com.ps.designpatterns.domain.SingletonLazyEntity;
