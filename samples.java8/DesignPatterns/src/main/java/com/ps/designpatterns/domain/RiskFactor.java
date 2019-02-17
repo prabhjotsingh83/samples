@@ -29,11 +29,7 @@ public class RiskFactor {
 		this.upperLimitValue = builder.upperLimitValue;
 		this.lowerLimitValue = builder.lowerLimitValue;
 		//this.logicId = builder.logicId; There will not be logic without 
-		if(null ==  builder.logicId) {
-			this.logicId = null;
-		} else {
-			throw new RuntimeException("Limit Without logic cannot have logic");
-		} 
+		this.logicId = null;
 		this.limitType = builder.limitType;
 	}
 
@@ -99,7 +95,6 @@ public class RiskFactor {
 		private String units;
 		private Integer upperLimitValue;
 		private Integer lowerLimitValue;
-		private Integer logicId;
 		private Integer limitType;
 		
 		public BuilderWithoutLogic() {
@@ -128,12 +123,6 @@ public class RiskFactor {
 		
 		public BuilderWithoutLogic lowerLimitValue(Integer lowerLimitValue) {
 			this.lowerLimitValue =lowerLimitValue;
-			return this;
-		}
-		
-
-		public BuilderWithoutLogic logicId(Integer logicId) {
-			this.logicId =logicId;
 			return this;
 		}
 		

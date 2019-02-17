@@ -17,7 +17,7 @@ public class BuilderMain {
 		//Limit With logic
 		RiskFactor.BuilderWithoutLogic builder2 = new RiskFactor.BuilderWithoutLogic();
 		
-		builder2.limitId(2).description("Net FXDL").limitType(0).upperLimitValue(10).lowerLimitValue(-10).units("$MM").logicId(1);
+		builder2.limitId(2).description("Net FXDL").limitType(0).upperLimitValue(10).lowerLimitValue(-10).units("$MM");
 		
 		RiskFactor rf2 = builder2.build();
 		
