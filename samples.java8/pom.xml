@@ -9,5 +9,6 @@
   <modules>
   	<module>LambdaExecutor</module>
     <module>SpringBoot</module>
+    <module>DesignPatterns</module>
   </modules>
 </project>

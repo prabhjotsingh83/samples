@@ -1,0 +1,7 @@
+transaction_id,trader_id,system_name,region,product_name,curr_1,curr_2,notional
+TRAN10000001,ps00001,neeru,NA,eqswap,USD,,100
+TRAN10000002,ps00001,neeru,NA,eqswap,USD,,100
+TRAN10000003,ps00001,neeru,NA,eqswap,USD,,100
+TRAN10000004,ps00001,neeru,NA,eqswap,USD,,100
+TRAN10000005,ps00001,neeru,NA,eqswap,USD,,100
+TRAN10000003,ps00001,neeru,NA,eqswap,USD,,100
