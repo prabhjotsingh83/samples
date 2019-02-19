@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 import com.ps.designpatterns.domain.ViewProductFactory;
 import com.ps.designpatterns.domain.ViewProducts;
+import com.ps.designpatterns.enums.ProductType;
 
 public class FactoryMain {
 
@@ -23,15 +24,15 @@ public class FactoryMain {
 		System.out.println(cal.get(Calendar.DAY_OF_MONTH));
 		
 		//Product view domain factory
-		ViewProducts swaps = ViewProductFactory.getViewModel("SWAP");
+		ViewProducts swaps = ViewProductFactory.getViewModel(ProductType.SWAP);
 		
 		System.out.println(swaps);
 		
-		ViewProducts forwards = ViewProductFactory.getViewModel("FORWARD");
+		ViewProducts forwards = ViewProductFactory.getViewModel(ProductType.FORWARD);
 		
 		System.out.println(forwards);
 		
-		ViewProducts def = ViewProductFactory.getViewModel("AAA");
+		ViewProducts def = ViewProductFactory.getViewModel(ProductType.ALL);
 		
 		System.out.println(def);
 	}
