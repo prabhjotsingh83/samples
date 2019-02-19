@@ -7,6 +7,12 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
+import com.ps.designpatterns.domain.RiskFactorAbstractFactory;
+import com.ps.designpatterns.domain.RiskFactoryModel;
+import com.ps.designpatterns.domain.RFValidationRules;
+import com.ps.designpatterns.enums.ProductInstrument;
+import com.ps.designpatterns.enums.RiskFactorType;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 
@@ -36,6 +42,19 @@ public class AbstractFactoryMain {
 		
 		System.out.println(dbabstractfactory.getClass());
 		System.out.println(dbf.getClass());
+		
+		
+		//Another example
+		RiskFactorAbstractFactory absFact= RiskFactorAbstractFactory.getRiskFactorFactory(ProductInstrument.FX);
+		
+		RiskFactoryModel rfm = absFact.getRiskFactorModel(RiskFactorType.FXDL);
+		RFValidationRules rfvrl = absFact.getValidationRules(RiskFactorType.FXDL);
+		
+		System.out.println(rfm);
+		System.out.println(rfvrl);
+		
+		
+		
 		
 	}
 
